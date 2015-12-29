@@ -1,0 +1,63 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="0dp"
+    android:paddingLeft="0dp"
+    android:paddingRight="0dp"
+    android:paddingTop="0dp"
+    tools:context=".Categories" >
+
+    <ImageView
+        android:id="@+id/apple"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:contentDescription="@string/background"
+        android:scaleType="fitXY"
+        android:src="@drawable/apple" />
+
+    <TextView
+        android:id="@+id/environment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/movies"
+        android:layout_below="@id/movies"
+        android:layout_marginTop="16dp"
+        android:clickable="true"
+        android:text="@string/environment"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/about"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="29dp"
+        android:layout_toRightOf="@id/movies"
+        android:clickable="true"
+        android:text="@string/about"
+        android:textSize="25sp" />
+
+    <TextView
+        android:id="@id/movies"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/human"
+        android:layout_centerVertical="true"
+        android:clickable="true"
+        android:text="@string/movies"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/human"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/movies"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="15dp"
+        android:layout_marginRight="100dp"
+        android:clickable="true"
+        android:text="@string/human"
+        android:textSize="20sp" />
+
+</RelativeLayout>
